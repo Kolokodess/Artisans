@@ -1,0 +1,50 @@
+{% load static %}
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Sign Up</title>
+		<link rel="stylesheet" href="{% static 'user/css/bootstrap.min.css' %}">
+		<link rel="stylesheet" href="{% static 'user/css/font-awesome.min.css' %}">
+		<link rel="stylesheet" href="{% static 'user/css/nav.css' %}">
+		<link rel="stylesheet" href="{% static 'user/css/signup.css' %}">
+
+	</head>
+	<body>
+		<div class="container-fluid">
+
+			<div class="nav_wrapper">
+				<nav>
+					<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+						<div class="container">
+							<a class="navbar-brand" href="#">Artisans</a>
+							<ul class="nav navbar-nav navbar-right">
+								<li>
+									<a href="#">Sign Up  <span class="fa fa-user-plus"></span></a>
+
+								</li>
+								<li>
+									<a href="#">Log In  <span class="fa fa-sign-in"></span></a>
+
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</nav>
+
+				<div class="row">
+					<div class="col-md-8 col-sm-12 img-box">
+						<div class="reg-form">
+              {% block content %}
+
+              {% endblock %}
+						</div>
+					</div>
+
+				</div>
+		</div>
+
+
+	</body>
+</html>

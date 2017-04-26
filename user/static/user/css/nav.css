@@ -1,0 +1,40 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing:border-box;
+}
+body{
+	background-image:url('../images/feat-welding.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+}
+.navbar.navbar-default.navbar-fixed-top{
+	background-color: #428b46;
+	opacity: 0.8;
+	border: 1px solid #428b46;
+	height: 70px;
+}
+.container{
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+.container a.navbar-brand{
+	font-family: 'Eurostile';
+	font-size: 36px;
+	color: #fff;	
+}
+.container a.navbar-brand:hover{
+	font-family: 'Eurostile';
+	font-size: 36px;
+	color: #fff;
+}
+.nav.navbar-nav{
+	background-color: #428b46;
+}
+.navbar-default .navbar-nav li a{
+	font-size: 22px;
+	color: white;
+	font-family: 'Eurostile';
+}
