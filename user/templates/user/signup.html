@@ -13,10 +13,10 @@
 </html> -->
 
 {% block content %}
-
+<div id="form">
 <form method="POST" value = "">{% csrf_token %}
   {{ sign_up_form|crispy }}
   <input class="btn btn-primary" type="submit" name="submit" value="submit">
 </form>
-
+</div>
 {% endblock %}
