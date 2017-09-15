@@ -5,7 +5,6 @@ from django.contrib.auth.models import User
 # models
 class Address(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, null = True, blank = True )
-    company = models.OneToOneField(User, on_delete=models.CASCADE, null = True, blank = True )
     address = models.CharField(max_length = 100, blank = True)
     lga = models.CharField(max_length = 40, blank = True)
     state = models.CharField(max_length = 40, blank = True)
@@ -44,7 +43,7 @@ class UserAccount(models.Model):
     gender = models.CharField(max_length = 10, choices = GENDER, null = True, blank =True)
     date_of_birth = models.DateField(null = True, blank =True)
     organisation = models.ForeignKey(Company, null = True, blank =True)
-    affiliate = models.ManyToManyField(User, null = True, blank = True )
+    #affiliate = models.ManyToManyField(User, null = True, blank = True )
 
     def __str__(self):
         return self.user.__str__()
