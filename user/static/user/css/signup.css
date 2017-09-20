@@ -3,6 +3,10 @@
 	padding:0px;
 	box-sizing:border-box;
 }
+
+#form {
+	margin-top: 75px;
+}
 body{
 	font-family: 'proxima nova', sans-serif;
 }
